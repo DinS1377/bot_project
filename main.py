@@ -7,7 +7,6 @@ import sqlite3
 
 
 client = commands.Bot(command_prefix='$', intents=discord.Intents.all(), help_command=None)
-client.remove_command('help')
 con = sqlite3.connect('bot.db')
 cur = con.cursor()
 
