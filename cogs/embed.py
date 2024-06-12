@@ -20,6 +20,12 @@ class Embed(commands.Cog):
                       value='задаёт роль которая будет автоматически выдаваться новым участникам на сервере')
         emb.add_field(name='{}ban ( {{id пользователя}}, [причина] )'.format(PREFIX),
                       value='банит пользователя')
+        emb.add_field(name='{}unban ([id пользователя])'.format(PREFIX),
+                      value='разбанивает пользователя')
+        emb.add_field(name='{}mute([id пользователяъ)'.format(PREFIX),
+                      value='мутит пользователя')
+        emb.add_field(name='{}unmute([id пользователяъ)'.format(PREFIX),
+                      value='размучивает пользователя')
 
         await ctx.send(embed=emb)
 
