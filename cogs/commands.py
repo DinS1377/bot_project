@@ -57,7 +57,6 @@ class Commands(commands.Cog):
         else:
             cur.execute(f'UPDATE roles SET role_id = {role_id} WHERE guild_id = {ctx.guild.id}')
             await ctx.send('новая роль задана')
-        await ctx.send(ctx.guild.id)
 
     # ban
     @commands.command(pass_context=True)
